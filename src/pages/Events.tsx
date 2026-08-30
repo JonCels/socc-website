@@ -8,7 +8,7 @@ export default function Events() {
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-socc-gold">
             Get in the game
           </p>
-          <h1 className="mb-5 text-4xl font-extrabold text-zinc-100">Events</h1>
+          <h1 className="mb-5 font-title text-4xl tracking-wide text-zinc-100">Events</h1>
           <p className="text-base leading-relaxed text-zinc-400">
             All SOCC events are organized and announced through our Discord server.
             Join us to find upcoming tournaments, side events, and casual cEDH

@@ -1,9 +1,22 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'MoriaCitadel';
+  src: url('/fonts/Moria_DF.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --color-socc-gold: #c9a84c;
   --color-socc-gold-light: #e8c97a;
   --color-socc-dark: #0f0e0d;
   --color-socc-surface: #1a1917;
   --color-socc-border: #2e2c29;
+  --font-title: 'MoriaCitadel', serif;
+}
+
+.font-title {
+  font-family: 'MoriaCitadel', serif;
 }

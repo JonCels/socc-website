@@ -48,7 +48,7 @@ export default function MythsAndTruths() {
         <p className="mb-2 text-xs font-semibold uppercase tracking-[0.25em] text-socc-gold">
           Setting the record straight
         </p>
-        <h1 className="mb-4 text-4xl font-extrabold text-zinc-100">
+        <h1 className="mb-4 font-title text-4xl tracking-wide text-zinc-100">
           cEDH Myths &amp; Truths
         </h1>
         <p className="text-base leading-relaxed text-zinc-400">
