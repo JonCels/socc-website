@@ -11,12 +11,23 @@
 @theme {
   --color-socc-gold: #c9a84c;
   --color-socc-gold-light: #e8c97a;
-  --color-socc-dark: #0f0e0d;
-  --color-socc-surface: #1a1917;
-  --color-socc-border: #2e2c29;
+  --color-socc-black: #0a0a0a;
+  --color-socc-ink: #191919;
+  --color-socc-bone: #edecea;
+  --color-socc-white: #ffffff;
+  --color-socc-dark: #0a0a0a;
+  --color-socc-surface: #191919;
+  --color-socc-border: #2e2e2e;
   --font-title: 'MoriaCitadel', serif;
 }
 
 .font-title {
   font-family: 'MoriaCitadel', serif;
+}
+
+/* Overlap consecutive backdrop images and blend their pixels directly. */
+.backdrop-crossfade {
+  margin-top: -4rem;
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 4rem);
+  mask-image: linear-gradient(to bottom, transparent, #000 4rem);
 }

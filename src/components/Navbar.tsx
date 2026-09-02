@@ -23,7 +23,7 @@ export default function Navbar() {
             to={to}
             end={to === '/'}
             className={({ isActive }) =>
-              ['font-title text-xl tracking-wide transition-colors drop-shadow-lg', isActive ? 'text-socc-gold' : 'text-zinc-300 hover:text-zinc-100'].join(' ')
+              ['font-title text-xl tracking-wide transition-colors drop-shadow-lg', isActive ? 'text-socc-gold' : 'text-socc-bone hover:text-socc-white'].join(' ')
             }
           >
             {label}

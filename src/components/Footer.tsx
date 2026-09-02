@@ -9,7 +9,7 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="fixed bottom-0 left-0 right-0 z-50 pt-2 pb-6" style={{ backgroundColor: '#0a0a0a' }}>
+    <footer className="fixed bottom-0 left-0 right-0 z-50 pt-2 pb-6">
       <div className="flex items-center justify-center gap-25">
         {socials.map(({ label, href, img }) => (
           <a

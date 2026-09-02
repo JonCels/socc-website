@@ -43,42 +43,76 @@ const myths: Myth[] = [
 
 export default function MythsAndTruths() {
   return (
-    <main className="mx-auto max-w-3xl px-6 py-20 pt-44">
-      <div className="mb-12">
-        <p className="mb-2 text-xs font-semibold uppercase tracking-[0.25em] text-socc-gold">
-          Setting the record straight
-        </p>
-        <h1 className="mb-4 font-title text-4xl tracking-wide text-zinc-100">
-          cEDH Myths &amp; Truths
-        </h1>
-        <p className="text-base leading-relaxed text-zinc-400">
-          Competitive Commander carries a lot of misconceptions — some born from
-          unfamiliarity, others from bad experiences at poorly-run tables. Here's
-          an honest look at what cEDH actually is.
-        </p>
+    <main className="relative min-h-screen bg-socc-black">
+
+      {/* Stacked image backdrop — absolute so the text determines page height */}
+      <div className="absolute inset-0 overflow-hidden bg-socc-black">
+
+        {/* Image 1: Banner — hero at the top */}
+        <div className="relative">
+          <img
+            src="/assets/FW_Schwrz_16.jpg"
+            alt=""
+            className="w-full object-cover"
+            style={{ height: '800px', objectPosition: 'center bottom' }}
+          />
+        </div>
+
+        {/* Image 2 — fades in from dark, fades back out to dark */}
+        <div className="backdrop-crossfade relative overflow-hidden">
+          <img
+            src="/assets/FW_Schwrz_76.jpg"
+            alt=""
+            className="object-cover"
+            style={{
+              height: '700px',
+              width: 'calc(100% + 150px)',
+              maxWidth: 'none',
+              marginLeft: '-150px',
+              objectPosition: 'center center',
+              opacity: 0.8,
+            }}
+          />
+        </div>
+
+        {/* Image 3 — same treatment; crop 100px off left to hide white edge */}
+        <div className="backdrop-crossfade relative">
+          <img
+            src="/assets/FW_Schwrz_89.jpg"
+            alt=""
+            className="w-full object-cover"
+            style={{ height: '700px', objectPosition: 'left center', opacity: 0.5 }}
+          />
+        </div>
       </div>
 
-      <div className="space-y-8">
-        {myths.map((item, i) => (
-          <article
-            key={i}
-            className="rounded-lg border border-socc-border bg-socc-surface p-6"
-          >
-            <div className="mb-3 flex items-start gap-3">
-              <span className="mt-0.5 shrink-0 rounded-sm bg-red-900/40 px-2 py-0.5 text-xs font-semibold uppercase tracking-wide text-red-400">
-                Myth
-              </span>
-              <p className="font-semibold text-zinc-200">{item.myth}</p>
+      {/* Text content — in normal flow so it sets the page height */}
+      <section className="relative z-10 pb-28" style={{ paddingTop: '280px' }}>
+          <div className="mx-auto max-w-3xl px-6">
+            <h1 className="mb-8 font-title text-3xl tracking-wide text-socc-white">
+              cEDH Myths &amp; Truths
+            </h1>
+            <p className="mb-12 text-base leading-relaxed text-socc-bone">
+              Competitive Commander carries a lot of misconceptions — some born from
+              unfamiliarity, others from bad experiences at poorly-run tables. Here's
+              an honest look at what cEDH actually is.
+            </p>
+
+            <div className="space-y-10">
+              {myths.map((item, i) => (
+                <article key={i} className="space-y-3">
+                  <h2 className="font-title text-xl tracking-wide text-socc-white">
+                    {item.myth}
+                  </h2>
+                  <p className="text-base leading-relaxed text-socc-bone">
+                    {item.truth}
+                  </p>
+                </article>
+              ))}
             </div>
-            <div className="flex items-start gap-3">
-              <span className="mt-0.5 shrink-0 rounded-sm bg-emerald-900/40 px-2 py-0.5 text-xs font-semibold uppercase tracking-wide text-emerald-400">
-                Truth
-              </span>
-              <p className="text-sm leading-relaxed text-zinc-400">{item.truth}</p>
-            </div>
-          </article>
-        ))}
-      </div>
+          </div>
+      </section>
+
     </main>
   )
 }
