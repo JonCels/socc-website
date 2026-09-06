@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import MythsAndFacts from './pages/MythsAndTruths'
 import Events from './pages/Events'
+import Merch from './pages/Merch'
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/myths" element={<MythsAndFacts />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/merch" element={<Merch />} />
         </Routes>
       </div>
 

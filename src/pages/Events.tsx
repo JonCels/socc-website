@@ -77,9 +77,9 @@ export default function Events() {
               Events
             </h1>
             <p className="mb-14 text-base font-medium leading-relaxed text-socc-bone">
-              SOCC brings Ontario's cEDH community together through loca
-              games, tournaments, and special events. Dates, registration,
-              and updates are always available through our Discord.
+              SOCC brings Ontario's cEDH community together through regular
+              locals, tournaments, and special events. Dates, registration,
+              and information are always available through our Discord.
             </p>
 
             <div className="space-y-14">

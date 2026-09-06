@@ -4,6 +4,7 @@ const links = [
   { to: '/', label: 'Home' },
   { to: '/myths', label: 'Myths & Facts' },
   { to: '/events', label: 'Events' },
+  { to: '/merch', label: 'Merch' },
 ]
 
 export default function Navbar() {
@@ -16,7 +17,7 @@ export default function Navbar() {
             className="h-32 w-32 rounded-sm object-cover"
         />
       </NavLink>
-      <nav className="flex justify-center gap-16">
+      <nav className="flex flex-wrap justify-center gap-x-16 gap-y-3 px-4">
         {links.map(({ to, label }) => (
           <NavLink
             key={to}
