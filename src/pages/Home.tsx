@@ -5,7 +5,7 @@ export default function Home() {
     <main className="relative min-h-screen bg-socc-black">
 
       {/* Stacked image backdrop — absolute so the text determines page height */}
-      <div className="absolute inset-0 overflow-hidden bg-socc-black">
+      <div className="absolute inset-0 overflow-hidden bg-socc-black opacity-70">
 
         {/* Image 1: Banner — hero at the top */}
         <div className="relative">
@@ -42,7 +42,7 @@ export default function Home() {
       {/* Fade foreground near the navbar without affecting the backdrop. */}
       <ForegroundFade
         hiddenUntil={170}
-        visibleFrom={310}
+        visibleFrom={280}
         bottomFadeStartsAt={120}
         bottomMinimumAt={80}
         minimumOpacity={0.25}
@@ -60,42 +60,20 @@ export default function Home() {
 
           <div className="mx-auto max-w-3xl px-6">
             <h2 className="mb-8 font-title text-3xl tracking-wide text-socc-white">Who We Are</h2>
-            <div className="space-y-5 text-base leading-relaxed text-socc-bone">
+            <div className="space-y-5 text-xl leading-relaxed text-socc-white">
               <p>
-                S.O.C.C. Canada's largest CEDH community. We are a group of tournament players 
-                and enthusiasts across Southern Ontario united by a love of competitive Commander. 
-                We want to grow the CEDH community here in Canada, the right way.
+              Southern Ontario Competitive Commander (S.O.C.C.) is Canada's largest cEDH community, 
+              dedicated to growing the game the right way through fairness, friendly competition 
+              and open discussion. With over 400 members and counting, S.O.C.C. is committed to 
+              providing an open, welcoming environment for Canadian cEDH to grow and thrive in. 
+              We are committed to creating a space where new players can try out the format and 
+              experts can hone their skills with some of the best players in the country.
               </p>
               <p>
-                We run regular local events, collaborate with tournament organizers
-                across the region, and maintain an active Discord where players discuss
-                theory, share decklists, and find games. Whether you're a seasoned
-                pilot, total beginner, or just crossing over from battlecruiser Commander, S.O.C.C. 
-                is the place to grow your game.
-              </p>
-              <p>
-                Our community values fair play, open discussion, and the continual
-                pursuit of improvement. We don't gatekeep by budget or experience, 
-                and actively encourage new players to join. Whether you're here to play 
-                competitive Magic, find friends, or just want to play, you belong here.
-              </p>
-              <p>
-                S.O.C.C. Canada's largest CEDH community. We are a group of tournament players 
-                and enthusiasts across Southern Ontario united by a love of competitive Commander. 
-                We want to grow the CEDH community here in Canada, the right way.
-              </p>
-              <p>
-                We run regular local events, collaborate with tournament organizers
-                across the region, and maintain an active Discord where players discuss
-                theory, share decklists, and find games. Whether you're a seasoned
-                pilot, total beginner, or just crossing over from battlecruiser Commander, S.O.C.C. 
-                is the place to grow your game.
-              </p>
-              <p>
-                Our community values fair play, open discussion, and the continual
-                pursuit of improvement. We don't gatekeep by budget or experience, 
-                and actively encourage new players to join. Whether you're here to play 
-                competitive Magic, find friends, or just want to play, you belong here.
+              S.O.C.C. hosts regular local events, collaborates with T.O.s across Ontario, and hosts 
+              a Discord where you can find everything you need to begin developing or improving on 
+              your cEDH skills.  So, whether you're here to make friends, improve your play, or simply 
+              play some cEDH, S.O.C.C. has a spot for you at the table!
               </p>
             </div>
           </div>
