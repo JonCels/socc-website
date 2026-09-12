@@ -6,41 +6,26 @@ interface Myth {
 }
 
 const myths: Myth[] = [
-  {
-    myth: 'cEDH is just whoever plays first wins.',
-    fact:
-      "While fast mana and early pressure matter, cEDH is fundamentally a multiplayer game where three opponents police the table. Attempting to win too early almost always draws the table's interaction. Knowing when to hold back, how to navigate the political landscape, and how to sequence through hate are all critical skills that separate good pilots from great ones.",
-  },
-  {
-    myth: 'cEDH is pay-to-win.',
-    fact:
-      'The highest-performing decks are expensive, but proxies are accepted at the vast majority of cEDH events — including our own. The community broadly prioritizes gameplay over gatekeeping. Many strong cEDH commanders are also relatively budget-friendly when proxies are allowed, and skill matters far more than card quality in a field of prepared opponents.',
-  },
-  {
-    myth: "cEDH isn't fun — it's too cutthroat.",
-    fact:
-      'Fun is subjective, but players who enjoy competitive Magic overwhelmingly find cEDH to be one of the most rewarding formats available. The deep game theory, political negotiation, and the weight of every decision create moments of tension and payoff that casual Commander rarely reaches. The community also tends to be welcoming and passionate about discussion and improvement.',
-  },
-  {
-    myth: 'You have to play only the best commanders to be competitive.',
-    fact:
-      "While a short list of commanders consistently top tables, the meta is broad and evolving. A deeply piloted tier-two commander with a well-tuned list can absolutely compete and win. Understanding your deck's line and the meta it's entering matters more than picking the \"best\" commander.",
-  },
-  {
-    myth: "cEDH games are over in two turns — there's no room for gameplay.",
-    fact:
-      "Average cEDH game length varies greatly by meta, table composition, and deck choice. Many games run 30–60 minutes with meaningful decisions throughout. Fast wins are possible, but they require surviving several windows of interaction from three opponents. The idea that games are mechanical non-events is a myth perpetuated by those who haven't played at a real cEDH table.",
-  },
-  {
-    myth: 'Combo is the only viable strategy.',
-    fact:
-      'While combo decks make up a significant portion of the meta, stax, tempo, and hatebear strategies all have real presence. Rule of Law effects, resource denial, and asymmetric prison pieces can lock opponents out of the game entirely. The meta rewards knowing how to fight on multiple axes.',
-  },
-  {
-    myth: "cEDH has no politics — it's purely optimal play.",
-    fact:
-      'Politics is alive and well in cEDH. Choosing which opponent\'s threat to answer, negotiating pass-the-turn deals, and deciding who you help slow down are all political decisions with real consequences. The difference from casual is that political promises carry less weight — but reading the table and making alliances of convenience is a genuine skill.',
-  },
+    {
+        myth: "cEDH is super boring, all games end on turn 2 with someone playing thassa's oracle before I get a chance to play the game.",
+        fact: "cEDH is played primarily on the stack, and decks are designed to be efficient and interactive. While some decks do look to put wins on the stack as early as turn one or two, many cEDH decks dedicate a large chunk of their deck to stopping these early wins. There are many different ways to win in cEDH, the fun part is getting there!" 
+    },
+    {
+        myth: "I can't get into cEDH, all the cards are way too expensive.",
+        fact: "cEDH is one of the only competitive formats in Magic the Gathering where major tournaments and events are proxy friendly. The community values skill and attitude far more than money. As long as you have a printer and some sleeves, you can play cEDH!"
+    },
+    {
+        myth: "I'm nervous to try cEDH, I'm new to magic and the format seems way too complicated.",
+        fact: "Actually, there are fewer cards in cEDH than in regular commander - not because of bans or a smaller card pool, but simply due to the format's power level! With fewer viable cards, there are fewer cards to know, leading to an easier new player experience. Additionally, abundant online resources and a knowledgeable playerbase help lower the barrier of entry for new players and make cEDH a deceptively friendly format for anyone to try."
+    },
+    {
+        myth: "cEDH is too competitive for me/the commander pool is too small, it's no fun.",
+        fact: "Despite its name, cEDH is not an inherently competitive format. In fact, there are many commanders that can be pushed to the cEDH level that are outside of the top decks. For the most part, cEDH games are played around kitchen tables, just the same as any other commander game. tEDH, or Tournament EDH, is a type of cEDH where deck choices become more limited and play becomes more intense, but is usually labelled as such ahead of time. Just be sure to ask your pod ahead of your game in a rule 0 conversation like any other commander game to avoid any confusion between cEDH vs tEDH!"
+    },
+    {
+        myth: "My bracket 4 deck can comfortably play in a cEDH pod.",
+        fact: "While bracket 4 decks are usually designed within a vacuum to push their commander to the highest possible power level, cEDH decks are designed to play within or against a meta, dropping additional synergies in order to play interaction pieces that can stop other meta decks. Wizards of the Coast designed the new bracket system with flexibility in mind, so while it's true you could feasibly play a bracket 4 deck in cEDH, it may prove difficult for you to have consistent, fun and interactive gameplay without modifying your deck to fit the cEDH meta."
+    },
 ]
 
 export default function MythsAndFacts() {
@@ -120,11 +105,6 @@ export default function MythsAndFacts() {
             <h1 className="mb-8 font-title text-3xl tracking-wide text-socc-white">
               cEDH Myths &amp; Facts
             </h1>
-            <p className="mb-8 text-base leading-relaxed text-socc-bone">
-              Competitive Commander carries a lot of misconceptions — some born from
-              unfamiliarity, others from bad experiences at poorly-run tables. Here's
-              an honest look at what cEDH actually is.
-            </p>
 
             <div className="space-y-14">
               {myths.map((item, i) => (

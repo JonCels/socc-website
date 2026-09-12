@@ -4,7 +4,7 @@ const links = [
   { to: '/', label: 'Home' },
   { to: '/myths', label: 'Myths & Facts' },
   { to: '/events', label: 'Events' },
-  { to: '/merch', label: 'Merch' },
+  //{ to: '/merch', label: 'Merch' },
 ]
 
 export default function Navbar() {

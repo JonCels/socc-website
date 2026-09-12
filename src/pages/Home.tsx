@@ -60,7 +60,7 @@ export default function Home() {
 
           <div className="mx-auto max-w-3xl px-6">
             <h2 className="mb-8 font-title text-3xl tracking-wide text-socc-white">Who We Are</h2>
-            <div className="space-y-5 text-xl leading-relaxed text-socc-white">
+            <div className="space-y-5 text-lg leading-relaxed text-socc-white">
               <p>
               Southern Ontario Competitive Commander (S.O.C.C.) is Canada's largest cEDH community, 
               dedicated to growing the game the right way through fairness, friendly competition 
