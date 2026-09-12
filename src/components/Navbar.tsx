@@ -12,7 +12,7 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 flex flex-col items-center pt-4 gap-8">
       <NavLink to="/">
         <img
-          src="/assets/White + Transparent.png"
+          src="/assets/socc-logo.png"
           alt="SOCC logo"
             className="h-32 w-32 rounded-sm object-cover"
         />
