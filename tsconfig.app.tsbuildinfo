@@ -1,1 +1,1 @@
-{"root":["./src/app.tsx","./src/main.tsx","./src/components/navbar.tsx","./src/pages/events.tsx","./src/pages/home.tsx","./src/pages/mythsandtruths.tsx"],"version":"5.9.3"}
+{"root":["./src/app.tsx","./src/main.tsx","./src/components/footer.tsx","./src/components/foregroundfade.tsx","./src/components/navbar.tsx","./src/components/siteloadgate.tsx","./src/pages/events.tsx","./src/pages/home.tsx","./src/pages/merch.tsx","./src/pages/mythsandtruths.tsx"],"version":"5.9.3"}

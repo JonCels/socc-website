@@ -27,18 +27,24 @@ export default function ForegroundFade({
       const container = containerRef.current
       if (!container) return
 
+      const isMobile = window.innerWidth < 640
+      const activeHiddenUntil = isMobile ? 120 : hiddenUntil
+      const activeVisibleFrom = isMobile ? 210 : visibleFrom
+      const activeBottomFadeStartsAt = isMobile ? 140 : bottomFadeStartsAt
+      const activeBottomMinimumAt = isMobile ? 60 : bottomMinimumAt
+      const activeMinimumOpacity = isMobile ? 0.1 : minimumOpacity
       const offset = container.getBoundingClientRect().top
-      const hiddenEnd = Math.max(0, hiddenUntil - offset)
-      const visibleStart = Math.max(hiddenEnd, visibleFrom - offset)
+      const hiddenEnd = Math.max(0, activeHiddenUntil - offset)
+      const visibleStart = Math.max(hiddenEnd, activeVisibleFrom - offset)
       const bottomStart = Math.max(
         visibleStart,
-        window.innerHeight - bottomFadeStartsAt - offset,
+        window.innerHeight - activeBottomFadeStartsAt - offset,
       )
       const bottomEnd = Math.max(
         bottomStart,
-        window.innerHeight - bottomMinimumAt - offset,
+        window.innerHeight - activeBottomMinimumAt - offset,
       )
-      const mask = `linear-gradient(to bottom, rgb(0 0 0 / ${minimumOpacity}) 0px, rgb(0 0 0 / ${minimumOpacity}) ${hiddenEnd}px, #000 ${visibleStart}px, #000 ${bottomStart}px, rgb(0 0 0 / ${minimumOpacity}) ${bottomEnd}px, rgb(0 0 0 / ${minimumOpacity}) 100%)`
+      const mask = `linear-gradient(to bottom, rgb(0 0 0 / ${activeMinimumOpacity}) 0px, rgb(0 0 0 / ${activeMinimumOpacity}) ${hiddenEnd}px, #000 ${visibleStart}px, #000 ${bottomStart}px, rgb(0 0 0 / ${activeMinimumOpacity}) ${bottomEnd}px, rgb(0 0 0 / ${activeMinimumOpacity}) 100%)`
 
       container.style.webkitMaskImage = mask
       container.style.maskImage = mask

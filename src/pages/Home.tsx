@@ -5,15 +5,15 @@ export default function Home() {
     <main className="relative min-h-screen bg-socc-black">
 
       {/* Stacked image backdrop — absolute so the text determines page height */}
-      <div className="absolute inset-0 overflow-hidden bg-socc-black opacity-70">
+      <div className="absolute inset-0 overflow-hidden bg-socc-black opacity-80 sm:opacity-70">
 
         {/* Image 1: Banner — hero at the top */}
         <div className="relative">
           <img
             src="/assets/FW_Schwrz_78.jpg"
             alt=""
-            className="w-full object-cover"
-            style={{ height: '800px', objectPosition: 'center bottom' }}
+            className="h-auto w-full object-contain sm:h-[800px] sm:object-cover 2xl:h-[950px]"
+            style={{ objectPosition: 'center bottom' }}
           />
         </div>
 
@@ -22,8 +22,8 @@ export default function Home() {
           <img
             src="/assets/FW_Schwrz_24.jpg"
             alt=""
-            className="w-full object-cover"
-            style={{ height: '700px', objectPosition: 'center center' }}
+            className="h-auto w-full object-contain sm:h-[700px] sm:object-cover 2xl:h-[850px]"
+            style={{ objectPosition: 'center center' }}
           />
         </div>
 
@@ -32,8 +32,8 @@ export default function Home() {
           <img
             src="/assets/FW_Schwrz_78.jpg"
             alt=""
-            className="w-full object-cover"
-            style={{ height: '700px', objectPosition: 'center center' }}
+            className="h-auto w-full object-contain sm:h-[700px] sm:object-cover 2xl:h-[850px]"
+            style={{ objectPosition: 'center center' }}
           />
         </div>
 
@@ -47,10 +47,10 @@ export default function Home() {
         bottomMinimumAt={80}
         minimumOpacity={0.25}
       >
-        <section className="pb-28" style={{ paddingTop: '250px' }}>
+        <section className="px-0 pt-44 pb-20 sm:pt-[250px] sm:pb-28 2xl:pt-[320px] 2xl:pb-36">
 
           {/* Wordmark — wider than the text column */}
-          <div className="mx-auto mb-16 max-w-4xl px-6">
+          <div className="mx-auto mb-10 max-w-4xl px-4 sm:mb-16 sm:px-6 2xl:mb-20 2xl:max-w-5xl">
             <img
               src="/assets/Word Mark Logo Type 2.png"
               alt="Southern Ontario Competitive Commander"
@@ -58,9 +58,9 @@ export default function Home() {
             />
           </div>
 
-          <div className="mx-auto max-w-3xl px-6">
-            <h2 className="mb-8 font-title text-3xl tracking-wide text-socc-white">Who We Are</h2>
-            <div className="space-y-5 text-lg leading-relaxed text-socc-white">
+          <div className="mx-auto max-w-3xl px-5 sm:px-6 2xl:max-w-4xl">
+            <h2 className="mb-6 font-title text-2xl tracking-wide text-socc-white sm:mb-8 sm:text-3xl 2xl:mb-10 2xl:text-4xl">Who We Are</h2>
+            <div className="space-y-5 text-base leading-relaxed text-socc-white sm:text-lg 2xl:space-y-7 2xl:text-xl">
               <p>
               Southern Ontario Competitive Commander (S.O.C.C.) is Canada's largest cEDH community, 
               dedicated to growing the game the right way through fairness, friendly competition 

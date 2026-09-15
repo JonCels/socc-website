@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+html,
+body,
+#root {
+  min-height: 100%;
+  background-color: #0a0a0a;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: 'MoriaCitadel';
   src: url('/fonts/Moria_DF.TTF') format('truetype');
@@ -27,7 +38,23 @@
 
 /* Overlap consecutive backdrop images and blend their pixels directly. */
 .backdrop-crossfade {
-  margin-top: -4rem;
-  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 4rem);
-  mask-image: linear-gradient(to bottom, transparent, #000 4rem);
+  margin-top: -2rem;
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 2rem);
+  mask-image: linear-gradient(to bottom, transparent, #000 2rem);
+}
+
+@media (min-width: 640px) {
+  .backdrop-crossfade {
+    margin-top: -4rem;
+    -webkit-mask-image: linear-gradient(to bottom, transparent, #000 4rem);
+    mask-image: linear-gradient(to bottom, transparent, #000 4rem);
+  }
+}
+
+@media (min-width: 1536px) {
+  .backdrop-crossfade {
+    margin-top: -6rem;
+    -webkit-mask-image: linear-gradient(to bottom, transparent, #000 6rem);
+    mask-image: linear-gradient(to bottom, transparent, #000 6rem);
+  }
 }

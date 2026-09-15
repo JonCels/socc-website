@@ -33,15 +33,15 @@ export default function MythsAndFacts() {
     <main className="relative min-h-screen bg-socc-black">
 
       {/* Stacked image backdrop — absolute so the text determines page height */}
-      <div className="absolute inset-0 overflow-hidden bg-socc-black opacity-70">
+      <div className="absolute inset-0 overflow-hidden bg-socc-black opacity-80 sm:opacity-70">
 
         {/* Image 1: Banner — hero at the top */}
         <div className="relative">
           <img
             src="/assets/FW_Schwrz_16.jpg"
             alt=""
-            className="w-full object-cover"
-            style={{ height: '800px', objectPosition: 'center bottom' }}
+            className="h-auto w-full object-contain sm:h-[800px] sm:object-cover 2xl:h-[950px]"
+            style={{ objectPosition: 'center bottom' }}
           />
         </div>
 
@@ -50,15 +50,7 @@ export default function MythsAndFacts() {
           <img
             src="/assets/FW_Schwrz_39.jpg"
             alt=""
-            className="object-cover"
-            style={{
-              height: '700px',
-              width: 'calc(100% + 150px)',
-              maxWidth: 'none',
-              marginLeft: '-150px',
-              objectPosition: 'center center',
-              opacity: 0.7,
-            }}
+            className="h-auto w-full object-contain opacity-70 sm:-ml-[150px] sm:h-[700px] sm:w-[calc(100%+150px)] sm:max-w-none sm:object-cover 2xl:h-[850px]"
           />
         </div>
 
@@ -67,8 +59,7 @@ export default function MythsAndFacts() {
           <img
             src="/assets/FW_Schwrz_08.jpg"
             alt=""
-            className="w-full object-cover"
-            style={{ height: '700px', objectPosition: 'left center', opacity: 0.5 }}
+            className="h-auto w-full object-contain opacity-50 sm:h-[700px] sm:object-cover sm:object-left 2xl:h-[850px]"
           />
         </div>
 
@@ -77,15 +68,7 @@ export default function MythsAndFacts() {
           <img
             src="/assets/FW_Schwrz_02.jpg"
             alt=""
-            className="object-cover"
-            style={{
-            height: '700px',
-            width: 'calc(100% + 150px)',
-            maxWidth: 'none',
-            marginLeft: '-150px',
-            objectPosition: 'center center',
-            opacity: 0.7,
-            }}
+            className="h-auto w-full object-contain opacity-70 sm:-ml-[150px] sm:h-[700px] sm:w-[calc(100%+150px)] sm:max-w-none sm:object-cover 2xl:h-[850px]"
           />
         </div>
       </div>
@@ -100,29 +83,29 @@ export default function MythsAndFacts() {
         bottomMinimumAt={80}
         minimumOpacity={0.25}
       >
-        <section className="pb-28" style={{ paddingTop: '280px' }}>
-          <div className="mx-auto max-w-3xl px-6">
-            <h1 className="mb-8 font-title text-3xl tracking-wide text-socc-white">
+        <section className="pt-44 pb-20 sm:pt-[280px] sm:pb-28 2xl:pt-[320px] 2xl:pb-36">
+          <div className="mx-auto max-w-3xl px-5 sm:px-6 2xl:max-w-4xl">
+            <h1 className="mb-7 font-title text-2xl tracking-wide text-socc-white sm:mb-8 sm:text-3xl 2xl:mb-10 2xl:text-4xl">
               cEDH Myths &amp; Facts
             </h1>
 
-            <div className="space-y-14">
+            <div className="space-y-10 sm:space-y-14 2xl:space-y-16">
               {myths.map((item, i) => (
-                <article key={i} className="space-y-5">
+                <article key={i} className="space-y-4 sm:space-y-5">
                   <div>
-                    <p className="mb-2 text-xs font-semibold uppercase tracking-[0.25em] text-socc-bone/70">
+                    <p className="mb-2 text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-socc-bone/70 sm:text-xs 2xl:text-sm">
                       Myth
                     </p>
-                    <h2 className="font-title text-xl font-bold tracking-wide text-socc-white">
+                    <h2 className="font-title text-base font-bold tracking-wide text-socc-white sm:text-xl 2xl:text-2xl">
                       {item.myth}
                     </h2>
                   </div>
 
-                  <div className="border-l-2 border-socc-bone/50 pl-5">
-                    <p className="mb-2 text-xs font-semibold uppercase tracking-[0.25em] text-socc-bone/80">
+                  <div className="border-l-2 border-socc-bone/50 pl-4 sm:pl-5 2xl:pl-6">
+                    <p className="mb-2 text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-socc-bone/80 sm:text-xs 2xl:text-sm">
                       Fact
                     </p>
-                    <p className="text-base font-medium leading-relaxed text-socc-bone">
+                    <p className="text-sm font-medium leading-relaxed text-socc-bone sm:text-base 2xl:text-lg">
                       {item.fact}
                     </p>
                   </div>

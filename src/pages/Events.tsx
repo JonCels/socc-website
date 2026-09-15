@@ -25,14 +25,13 @@ export default function Events() {
     <main className="relative min-h-screen bg-socc-black">
 
       {/* Stacked image backdrop — absolute so the text determines page height */}
-      <div className="absolute inset-0 overflow-hidden bg-socc-black opacity-70">
+      <div className="absolute inset-0 overflow-hidden bg-socc-black opacity-80 sm:opacity-70">
 
         <div className="relative">
           <img
             src="/assets/FW_Schwrz_21.jpg"
             alt=""
-            className="w-full object-cover"
-            style={{ height: '800px', objectPosition: 'center center', opacity: 0.7 }}
+            className="h-auto w-full object-contain opacity-70 sm:h-[800px] sm:object-cover 2xl:h-[950px]"
           />
         </div>
 
@@ -40,15 +39,7 @@ export default function Events() {
           <img
             src="/assets/FW_Schwrz_21.jpg"
             alt=""
-            className="object-cover"
-            style={{
-            height: '700px',
-            width: 'calc(100% + 150px)',
-            maxWidth: 'none',
-            marginLeft: '-150px',
-            objectPosition: 'center center',
-            opacity: 0.55,
-            }}
+            className="h-auto w-full object-contain opacity-[0.55] sm:-ml-[150px] sm:h-[700px] sm:w-[calc(100%+150px)] sm:max-w-none sm:object-cover 2xl:h-[850px]"
           />
         </div>
 
@@ -56,8 +47,7 @@ export default function Events() {
           <img
             src="/assets/FW_Schwrz_24.jpg"
             alt=""
-            className="w-full object-cover"
-            style={{ height: '700px', objectPosition: 'center center', opacity: 0.7 }}
+            className="h-auto w-full object-contain opacity-70 sm:h-[700px] sm:object-cover 2xl:h-[850px]"
           />
         </div>
 
@@ -71,39 +61,39 @@ export default function Events() {
         bottomMinimumAt={80}
         minimumOpacity={0.25}
       >
-        <section className="pb-28" style={{ paddingTop: '280px' }}>
-          <div className="mx-auto max-w-3xl px-6">
-            <h1 className="mb-8 font-title text-3xl tracking-wide text-socc-white">
+        <section className="pt-44 pb-20 sm:pt-[280px] sm:pb-28 2xl:pt-[320px] 2xl:pb-36">
+          <div className="mx-auto max-w-3xl px-5 sm:px-6 2xl:max-w-4xl">
+            <h1 className="mb-7 font-title text-2xl tracking-wide text-socc-white sm:mb-8 sm:text-3xl 2xl:mb-10 2xl:text-4xl">
               Events
             </h1>
-            <p className="mb-14 text-base font-medium leading-relaxed text-socc-bone">
+            <p className="mb-10 text-sm font-medium leading-relaxed text-socc-bone sm:mb-14 sm:text-base 2xl:mb-16 2xl:text-lg">
               SOCC brings Ontario's cEDH community together through regular
               locals, tournaments, and special events. Dates, registration,
               and information are always available through our Discord.
             </p>
 
-            <div className="space-y-14">
+            <div className="space-y-10 sm:space-y-14 2xl:space-y-16">
               {eventTypes.map((event) => (
-                <article key={event.title} className="space-y-5">
+                <article key={event.title} className="space-y-4 sm:space-y-5">
                   <div>
-                    <h2 className="font-title text-xl font-bold tracking-wide text-socc-white">
+                    <h2 className="font-title text-lg font-bold tracking-wide text-socc-white sm:text-xl 2xl:text-2xl">
                       {event.title}
                     </h2>
                   </div>
 
-                  <p className="border-l-2 border-socc-bone/50 pl-5 text-base font-medium leading-relaxed text-socc-bone">
+                  <p className="border-l-2 border-socc-bone/50 pl-4 text-sm font-medium leading-relaxed text-socc-bone sm:pl-5 sm:text-base 2xl:pl-6 2xl:text-lg">
                     {event.description}
                   </p>
                 </article>
               ))}
             </div>
 
-            <div className="mt-16">
+            <div className="mt-12 sm:mt-16 2xl:mt-20">
               <a
                 href={DISCORD_INVITE}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-title text-xl tracking-wide text-socc-gold transition-colors hover:text-socc-gold-light"
+                className="font-title text-lg tracking-wide text-socc-gold transition-colors hover:text-socc-gold-light sm:text-xl 2xl:text-2xl"
               >
                 Join the SOCC Discord →
               </a>
