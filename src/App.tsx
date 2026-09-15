@@ -10,9 +10,9 @@ import Events from './pages/Events'
 export default function App() {
   return (
     <BrowserRouter>
-      <SiteLoadGate>
-        <Navbar />
+      <Navbar />
 
+      <SiteLoadGate>
         <div className="relative z-10 min-h-screen bg-socc-black text-socc-bone">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -21,9 +21,9 @@ export default function App() {
             {/*<Route path="/merch" element={<Merch />} />*/}
           </Routes>
         </div>
-
-        <Footer />
       </SiteLoadGate>
+
+      <Footer />
     </BrowserRouter>
   )
 }

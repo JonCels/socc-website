@@ -9,7 +9,7 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="fixed bottom-0 left-0 right-0 z-[60] pt-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] sm:pb-6">
+    <footer className="fixed bottom-0 left-0 right-0 z-[60] py-2 sm:pt-2 sm:pb-6">
       <div className="mx-auto flex max-w-xl items-center justify-between px-3 sm:px-6 2xl:max-w-2xl">
         {socials.map(({ label, href, img }) => (
           <a
