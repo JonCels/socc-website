@@ -28,10 +28,15 @@ const pageAssets: Record<string, string[]> = {
     '/assets/FW_Schwrz_02.jpg',
     '/assets/FW_Schwrz_87.jpg',
     '/assets/FW_Schwrz_89.jpg',
+    '/assets/merch/Playmat.jpg',
+    '/assets/merch/Shirt_SOCC.png',
+    '/assets/merch/Shirt_SKA.png',
+    '/assets/merch/Tokens_All.jpg',
+    '/assets/merch/Tokens_All_2.jpg',
   ],
 }
 
-const activePaths = ['/', '/myths', '/events']
+const activePaths = ['/', '/myths', '/events', '/merch']
 const loadedPaths = new Set<string>()
 const pathLoads = new Map<string, Promise<void>>()
 
