@@ -35,7 +35,7 @@ const merchItems: MerchCategory[] = [
       },
       {
         name: 'SKA Shirts',
-        price: '$45',
+        price: '$50',
         image: '/assets/merch/Shirt_SKA.png',
       },
     ],
