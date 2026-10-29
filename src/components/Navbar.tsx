@@ -13,7 +13,7 @@ export default function Navbar() {
       <NavLink to="/">
         <img
           src="/assets/socc-logo.png"
-          alt="SOCC logo"
+          alt="S.O.C.C. logo"
           className="h-20 w-20 rounded-sm object-cover sm:h-32 sm:w-32 2xl:h-36 2xl:w-36"
         />
       </NavLink>

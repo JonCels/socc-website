@@ -320,7 +320,7 @@ export default function Merch() {
                   rel="noopener noreferrer"
                   className="mt-6 inline-block font-title text-lg tracking-wide text-socc-gold transition-colors hover:text-socc-gold-light sm:text-xl"
                 >
-                  Join the SOCC Discord →
+                  Join the S.O.C.C. Discord →
                 </a>
               </div>
             </div>

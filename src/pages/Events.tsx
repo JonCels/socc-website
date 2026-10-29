@@ -67,7 +67,7 @@ export default function Events() {
               Events
             </h1>
             <p className="mb-10 text-sm font-medium leading-relaxed text-socc-bone sm:mb-14 sm:text-base 2xl:mb-16 2xl:text-lg">
-              SOCC brings Ontario's cEDH community together through regular
+              S.O.C.C. brings Ontario's cEDH community together through regular
               locals, tournaments, and special events. Dates, registration,
               and information are always available through our Discord.
             </p>
@@ -95,7 +95,7 @@ export default function Events() {
                 rel="noopener noreferrer"
                 className="font-title text-lg tracking-wide text-socc-gold transition-colors hover:text-socc-gold-light sm:text-xl 2xl:text-2xl"
               >
-                Join the SOCC Discord →
+                Join the S.O.C.C. Discord →
               </a>
             </div>
           </div>
