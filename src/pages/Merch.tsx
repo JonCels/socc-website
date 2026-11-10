@@ -65,8 +65,6 @@ const merchItems: MerchCategory[] = [
 
 const merchContacts = [
   { name: 'Brian', tag: '@enticious' },
-  { name: 'Josh', tag: '@joshoohah' },
-  { name: 'Dilan', tag: '@dillydoesitbetter' },
 ]
 
 function GalleryArrow({
