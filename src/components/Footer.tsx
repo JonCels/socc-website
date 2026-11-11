@@ -1,7 +1,7 @@
 const socials = [
   { label: 'Linktree',  href: 'https://linktr.ee/soccmtg',           img: '/external/linktree-white-icon.png' },
   { label: 'Discord',   href: 'https://discord.gg/5ZaP3wcxGD',       img: '/external/discord-white-icon.png' },
-  //{ label: 'Twitter',   href: 'https://x.com/soccmtg',            img: '/external/x-social-media-white-icon.png' },
+  { label: 'Twitter',   href: 'https://x.com/soccmtg',            img: '/external/x-social-media-white-icon.png' },
   { label: 'Instagram', href: 'https://instagram.com/soccmtg',     img: '/external/instagram-white-icon.png' },
   //{ label: 'YouTube',   href: 'https://youtube.com/@soccmtg',     img: '/external/youtube-app-white-icon.png' },
   //{ label: 'TikTok',    href: 'https://tiktok.com/@soccmtg',        img: '/external/tiktok-simplified-white-icon.png' },
